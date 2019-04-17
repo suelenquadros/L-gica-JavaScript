@@ -22,23 +22,31 @@ c)  -->
 <script>
 
 
-// O valor da conta (consumo)
-var total =100;
-// O número de clientes 
-var clientes =5;
-// O valor dos 10% (cota do garçom
-var calculo=total * 0.1;
-console.log (calculo)
-// O valor final da conta (consumo + 10%)
-var final = total + calculo
-console.log (final)
-// O valor que cada cliente deve pagar
-var divisao= final /clientes
+// // O valor da conta (consumo)
+// var total =100;
+// // O número de clientes 
+// var clientes =5;
+// // O valor dos 10% (cota do garçom
+// var calculo=total * 0.1;
+// console.log (calculo)
+// // O valor final da conta (consumo + 10%)
+// var final = total + calculo
+// console.log (final)
+// // O valor que cada cliente deve pagar
+// var divisao= final /clientes
 
-console.log (divisao)
+// console.log (divisao)
 
 
 
+var valorConta= Number(prompt ('Digite o valor da conta'));
+var NumeroPessoas =Number(prompt ('Digite o valor da conta'));
+
+var cotaGarcon = valorConta * 10/100;
+console.log ('O valor dos 10% é '+ cotaGarcon);
+console.log ('O valor final da conta é ' + Number (valorConta+cotaGarcon))
+console.log ('O valor que cada cliente deve pagar ',((valorConta + cotaGarcon)/ NumeroPessoas).toFixed(2))
+ 
 
 
 
@@ -46,4 +54,4 @@ console.log (divisao)
 </script>
 
 </body>
-</html>
+</html
